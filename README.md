@@ -138,3 +138,12 @@ $ docker rm -f test
 目前 Github Actions 使用的 [Runner](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners/about-github-hosted-runners#cloud-hosts-used-by-github-hosted-runners) 运行在 [Azure Standard_DS2_v2](https://docs.microsoft.com/azure/virtual-machines/dv2-dsv2-series#dsv2-series) 虚拟机上，有 84GB 数据盘空间挂载在 `/`，14GB 临时存储挂载在 `/mnt`。可供构建任务使用的空闲存储空间在 25~29GB 左右。
 
 在 `docker-image.yml` 中使用 [Maximize build disk space](https://github.com/marketplace/actions/maximize-build-disk-space) 这个 Action 来将根路径的空闲空间扩展到 45GB 左右，如果要下载的模型文件总大小超过了这个范围，可以构建多个镜像，如 [StarCoder 15.5B](https://huggingface.co/bigcode/starcoder) 模型文件总大小在 60GB 以上，可构建 [starcoder-01](https://github.com/AlphaHinex/hf-models/releases/tag/starcoder-01)、[starcoder-02](https://github.com/AlphaHinex/hf-models/releases/tag/starcoder-02) 两个镜像以获得全部文件。
+
+
+sudo docker pull wjgaas/hf-models:playground-v2-1024px-aesthetic
+
+直接从 Docker Hub 下载镜像有困难，可参考 解决目前Docker Hub国内无法访问方法汇总 等方式配置镜像源，实测上海交大镜像站 https://docker.mirrors.sjtug.sjtu.edu.cn/ 速度很快。
+
+解决目前Docker Hub国内无法访问方法汇总 https://zhuanlan.zhihu.com/p/642560164
+
+
