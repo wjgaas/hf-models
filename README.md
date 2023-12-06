@@ -142,6 +142,12 @@ $ docker rm -f test
 
 sudo docker pull wjgaas/hf-models:playground-v2-1024px-aesthetic
 
+docker run -d --name test --rm alphahinex/hf-models:codet5-small tail -f /dev/null
+
+docker exec -ti test tree /root/.cache/huggingface/hub
+
+docker cp -L test:/root/.cache/huggingface/hub/models--Salesforce--codet5-small/snapshots/a642dc934e5475185369d09ac07091dfe72a31fc/README.md .
+
 直接从 Docker Hub 下载镜像有困难，可参考 解决目前Docker Hub国内无法访问方法汇总 等方式配置镜像源，实测上海交大镜像站 https://docker.mirrors.sjtug.sjtu.edu.cn/ 速度很快。
 
 解决目前Docker Hub国内无法访问方法汇总 https://zhuanlan.zhihu.com/p/642560164
