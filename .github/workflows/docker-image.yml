@@ -9,7 +9,7 @@ on:
 env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: docker.io
-  IMAGE_NAME: alphahinex/hf-models:oasst1
+  IMAGE_NAME: wjgaas/hf-models:playground-v2-1024px-aesthetic
 
 jobs:
 
