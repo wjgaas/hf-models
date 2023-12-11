@@ -4,9 +4,7 @@
 
 # Or an entire repository
 from huggingface_hub import snapshot_download
-from huggingface_hub import snapshot_download
-from huggingface_hub import snapshot_download
-snapshot_download("playgroundai/playground-v2-1024px-aesthetic",
+snapshot_download("h94/IP-Adapter",
                   allow_patterns=["sdxl_models/image_encoder/pytorch_model.bin"])
 # Download from a dataset
 #from huggingface_hub import snapshot_download
