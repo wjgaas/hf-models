@@ -4,8 +4,7 @@
 
 # Or an entire repository
 from huggingface_hub import snapshot_download
-snapshot_download("h94/IP-Adapter",
-                  allow_patterns=["sdxl_models/ip-adapter_sdxl_vit-h.bin"])
+snapshot_download("h94/IP-Adapter")
 # Download from a dataset
 #from huggingface_hub import snapshot_download
 # snapshot_download(repo_id="bigcode/starcoderdata", repo_type="dataset", allow_patterns=["git-commits-cleaned/train-00000-of-00055.parquet", "github-issues-filtered-structured/train-00000-of-00059.parquet"])
