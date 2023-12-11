@@ -9,7 +9,7 @@ on:
 env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: docker.io
-  IMAGE_NAME: wjgaas/hf-models:playground-v2-1024px-aesthetic
+  IMAGE_NAME: wjgaas/hf-models:IP-Adapter
 
 jobs:
 
