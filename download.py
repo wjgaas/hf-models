@@ -4,7 +4,7 @@
 
 # Or an entire repository
 from huggingface_hub import snapshot_download
-snapshot_download("h94/IP-Adapter",
+snapshot_download("runwayml/stable-diffusion-v1-5",
                   allow_patterns=["feature_extractor/preprocessor_config.json",
                                   "scheduler/scheduler_config.json",
                                   "text_encoder/config.json",
