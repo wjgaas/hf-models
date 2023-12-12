@@ -4,11 +4,7 @@
 
 # Or an entire repository
 from huggingface_hub import snapshot_download
-snapshot_download("runwayml/stable-diffusion-v1-5",
-                  allow_patterns=[
-                                  "text_encoder/pytorch_model.bin",
-                                  "unet/diffusion_pytorch_model.bin",
-                                  ]
+snapshot_download("runwayml/stable-diffusion-v1-5"
                   )
 # Download from a dataset
 #from huggingface_hub import snapshot_download
