@@ -5,19 +5,9 @@
 # Or an entire repository
 from huggingface_hub import snapshot_download
 snapshot_download("runwayml/stable-diffusion-v1-5",
-                  allow_patterns=["feature_extractor/preprocessor_config.json",
-                                  "scheduler/scheduler_config.json",
-                                  "text_encoder/config.json",
-                                  "text_encoder/pytorch_model.fp16.bin",
-                                  "tokenizer/special_tokens_map.json",
-                                  "tokenizer/tokenizer_config.json",
-                                  "tokenizer/vocab.json",
-                                  "tokenizer/merges.txt",
-                                  "unet/config.json",
-                                  "unet/diffusion_pytorch_model.fp16.bin",
-                                  "vae/config.json",
-                                  "vae/diffusion_pytorch_model.bin",
-                                  "vae/diffusion_pytorch_model.fp16.bin"
+                  allow_patterns=[
+                                  "text_encoder/pytorch_model.bin",
+                                  "unet/diffusion_pytorch_model.bin",
                                   ]
                   )
 # Download from a dataset
