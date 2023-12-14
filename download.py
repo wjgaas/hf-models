@@ -4,7 +4,7 @@
 
 # Or an entire repository
 from huggingface_hub import snapshot_download
-snapshot_download("stabilityai/sd-vae-ft-mse"
+snapshot_download("SG161222/Realistic_Vision_V4.0_noVAE"
                   )
 # Download from a dataset
 #from huggingface_hub import snapshot_download
