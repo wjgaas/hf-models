@@ -4,7 +4,7 @@
 
 # Or an entire repository
 from huggingface_hub import snapshot_download
-snapshot_download("SG161222/Realistic_Vision_V4.0_noVAE"
+snapshot_download("JunhaoZhuang/PowerPaint-v1"
                   )
 # Download from a dataset
 #from huggingface_hub import snapshot_download
