@@ -9,7 +9,7 @@ on:
 env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: docker.io
-  IMAGE_NAME: wjgaas/hf-models:Realistic_Vision_V4.0_noVAE
+  IMAGE_NAME: wjgaas/hf-models:PowerPaint-v1
 
 jobs:
 
