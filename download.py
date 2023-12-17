@@ -4,7 +4,9 @@
 
 # Or an entire repository
 from huggingface_hub import snapshot_download
-snapshot_download("JunhaoZhuang/PowerPaint-v1"
+# snapshot_download("JunhaoZhuang/PowerPaint-v1"
+#                   )
+snapshot_download("h94/IP-Adapter"
                   )
 # Download from a dataset
 #from huggingface_hub import snapshot_download
