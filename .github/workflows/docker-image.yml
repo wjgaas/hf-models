@@ -9,7 +9,7 @@ on:
 env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: docker.io
-  IMAGE_NAME: wjgaas/hf-models:IP-Adapter
+  IMAGE_NAME: wjgaas/hf-models:RealVisXL_V2.0
 
 jobs:
 
