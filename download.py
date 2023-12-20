@@ -6,7 +6,7 @@
 from huggingface_hub import snapshot_download
 # snapshot_download("JunhaoZhuang/PowerPaint-v1"
 #                   )
-snapshot_download("h94/IP-Adapter"
+snapshot_download("SG161222/RealVisXL_V2.0"
                   )
 # Download from a dataset
 #from huggingface_hub import snapshot_download
