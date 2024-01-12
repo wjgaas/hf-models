@@ -139,6 +139,8 @@ $ docker rm -f test
 
 在 `docker-image.yml` 中使用 [Maximize build disk space](https://github.com/marketplace/actions/maximize-build-disk-space) 这个 Action 来将根路径的空闲空间扩展到 45GB 左右，如果要下载的模型文件总大小超过了这个范围，可以构建多个镜像，如 [StarCoder 15.5B](https://huggingface.co/bigcode/starcoder) 模型文件总大小在 60GB 以上，可构建 [starcoder-01](https://github.com/AlphaHinex/hf-models/releases/tag/starcoder-01)、[starcoder-02](https://github.com/AlphaHinex/hf-models/releases/tag/starcoder-02) 两个镜像以获得全部文件。
 
+sudo docker pull wjgaas/hf-models:RealVisXL_V3.0
+sudo docker run --rm -it --gpus all -v $PWD:/workspace wjgaas/hf-models:RealVisXL_V3.0 sh
 
 sudo docker pull wjgaas/hf-models:playground-v2-1024px-aesthetic
 
