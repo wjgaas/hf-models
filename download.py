@@ -8,7 +8,21 @@ from huggingface_hub import snapshot_download
 #                   )
 # snapshot_download("SG161222/RealVisXL_V3.0"
 #                   )
-snapshot_download("stabilityai/sdxl-turbo"
+snapshot_download("stabilityai/sdxl-turbo",
+                  allow_patterns=[
+                    "model_index.json",
+                    "scheduler/scheduler_config.json",
+                    "text_encoder/config.json,
+                    "text_encoder/model.fp16.safetensors",
+                    "text_encoder_2/config.json,
+                    "text_encoder_2/model.fp16.safetensors",
+                    "tokenizer/",
+                    "tokenizer_2/",
+                    "unet/config.json",
+                    "unet/diffusion_pytorch_model.fp16.safetensors",
+                    "vae/config.json",
+                    "vae/diffusion_pytorch_model.fp16.safetensors",
+                  ]
                   )
 # Download from a dataset
 #from huggingface_hub import snapshot_download
