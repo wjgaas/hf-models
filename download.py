@@ -8,28 +8,30 @@ from huggingface_hub import snapshot_download
 #                   )
 # snapshot_download("SG161222/RealVisXL_V3.0"
 #                   )
-snapshot_download("stabilityai/sdxl-turbo",
-                  allow_patterns=[
-                    "model_index.json",
-                    "scheduler/scheduler_config.json",
-                    "text_encoder/config.json",
-                    "text_encoder/model.fp16.safetensors",
-                    "text_encoder_2/config.json",
-                    "text_encoder_2/model.fp16.safetensors",
-                    "tokenizer/merges.txt",
-                    "tokenizer/special_tokens_map.json",
-                    "tokenizer/tokenizer_config.json",
-                    "tokenizer/vocab.json",
-                    "tokenizer_2/merges.txt",
-                    "tokenizer_2/special_tokens_map.json",
-                    "tokenizer_2/tokenizer_config.json",
-                    "tokenizer_2/vocab.json",
-                    "unet/config.json",
-                    "unet/diffusion_pytorch_model.fp16.safetensors",
-                    "vae/config.json",
-                    "vae/diffusion_pytorch_model.fp16.safetensors",
-                  ]
+snapshot_download("SG161222/RealVisXL_V2.02_Turbo"
                   )
+# snapshot_download("stabilityai/sdxl-turbo",
+#                   allow_patterns=[
+#                     "model_index.json",
+#                     "scheduler/scheduler_config.json",
+#                     "text_encoder/config.json",
+#                     "text_encoder/model.fp16.safetensors",
+#                     "text_encoder_2/config.json",
+#                     "text_encoder_2/model.fp16.safetensors",
+#                     "tokenizer/merges.txt",
+#                     "tokenizer/special_tokens_map.json",
+#                     "tokenizer/tokenizer_config.json",
+#                     "tokenizer/vocab.json",
+#                     "tokenizer_2/merges.txt",
+#                     "tokenizer_2/special_tokens_map.json",
+#                     "tokenizer_2/tokenizer_config.json",
+#                     "tokenizer_2/vocab.json",
+#                     "unet/config.json",
+#                     "unet/diffusion_pytorch_model.fp16.safetensors",
+#                     "vae/config.json",
+#                     "vae/diffusion_pytorch_model.fp16.safetensors",
+#                   ]
+#                   )
 # Download from a dataset
 #from huggingface_hub import snapshot_download
 # snapshot_download(repo_id="bigcode/starcoderdata", repo_type="dataset", allow_patterns=["git-commits-cleaned/train-00000-of-00055.parquet", "github-issues-filtered-structured/train-00000-of-00059.parquet"])
