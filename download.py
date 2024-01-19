@@ -6,7 +6,9 @@
 from huggingface_hub import snapshot_download
 # snapshot_download("JunhaoZhuang/PowerPaint-v1"
 #                   )
-snapshot_download("SG161222/RealVisXL_V3.0"
+# snapshot_download("SG161222/RealVisXL_V3.0"
+#                   )
+snapshot_download("stabilityai/sdxl-turbo"
                   )
 # Download from a dataset
 #from huggingface_hub import snapshot_download
